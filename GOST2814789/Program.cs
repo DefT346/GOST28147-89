@@ -8,7 +8,7 @@ while (true)
     var enc = GOST.Encode(Console.ReadLine(), key);
     var mes = GOST.Decode(enc, key);
 
-    Console.WriteLine(mes);
+    Console.WriteLine("\nИсходное собщение: " + mes);
 }
 
 

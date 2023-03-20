@@ -48,7 +48,8 @@
             string row = "";
             for (int i = 0; i < keys.Length; i++)
             {
-                row += Convert.ToString(keys[i], 2) + "\n";
+                row += $"Ключ [{i}]" + Convert.ToString(keys[i], 2);
+                if (i != keys.Length - 1) row += "\n";
             }
             return row;
         }
